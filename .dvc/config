@@ -1,0 +1,6 @@
+[core]
+    remote = backblaze
+['remote "backblaze"']
+    url = s3://assignment-1-da3408/dvc-storage
+    endpointurl = https://s3.us-east-005.backblazeb2.com
+    profile = backblaze
