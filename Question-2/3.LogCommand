@@ -1,0 +1,6 @@
+mlflow.log_param("hidden_layer_sizes", hidden_layer_sizes)
+mlflow.log_param("max_iter", max_iter)
+model, acc, f1 = train_and_evaluate(hidden_layer_sizes, max_iter)
+
+mlflow.log_metric("accuracy", acc)
+mlflow.log_metric("f1_macro", f1)
